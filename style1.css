@@ -177,30 +177,21 @@ input {
     }
 
     .contents .logo {
-        margin: 1.5rem;
+        margin: 1rem 1.5rem;
         padding: 1rem;
     }
 
-    /* 
-    .centerPseudo {
-        margin: 0 1rem;
-        padding: 0 1rem;
-
-    } */
-
     h1,
     h1 span {
-        margin: 2rem 1rem 1rem;
+        margin: 1.2rem 1rem 1rem;
         padding: 1rem 1rem 0.5rem;
         text-align: center;
     }
 
     .desc {
         text-align: center;
-        margin: 0 0.5rem;
+        margin: 0 0.8rem;
         padding: 0 0rem 1rem;
-        /* width: 100vw; */
-
     }
 
     .mobile-hero-banner {
@@ -213,9 +204,8 @@ input {
     }
 
     input[type="text"] {
-        width: 11rem;
+        width: 13rem;
         padding: 0.8rem 3.5rem 0.8rem 1.7rem;
-        /* margin: 1rem 2rem; */
         margin: 1rem 1.5rem;
 
     }
@@ -232,6 +222,9 @@ input {
     }
 
     .attribution {
-        position: relative;
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 100%;
     }
 }
