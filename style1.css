@@ -41,7 +41,7 @@ html {
 
 .centerPseudo {
     display: inline-block;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 .centerPseudo::before {
@@ -72,12 +72,12 @@ h1 span {
     color: var(--Desaturated-Red);
     font-size: 16px;
     line-height: 1.7rem;
-    margin-right: 8rem;
+    margin-right: 7.5rem;
     padding-right: 8rem;
 }
 
 input[type="text"] {
-    width: 23rem;
+    width: 16rem;
     padding: 0.8rem 3.5rem 0.8rem 1.7rem;
     font-family: 'Josefin Sans';
     font-size: 16px;
