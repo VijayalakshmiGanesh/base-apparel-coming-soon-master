@@ -181,15 +181,16 @@ input {
         padding: 1rem;
     }
 
+    /* 
     .centerPseudo {
         margin: 0 1rem;
         padding: 0 1rem;
-        width: 100vw;
-    }
+
+    } */
 
     h1,
     h1 span {
-        margin: 2rem 2rem 1rem;
+        margin: 2rem 1rem 1rem;
         padding: 1rem 1rem 0.5rem;
         text-align: center;
     }
@@ -197,7 +198,8 @@ input {
     .desc {
         text-align: center;
         margin: 0 0.3rem;
-        padding: 0 0.2rem;
+        padding: 0 0.2rem 1rem;
+        width: 100vw;
 
     }
 
@@ -211,7 +213,7 @@ input {
     }
 
     input[type="text"] {
-        width: 10rem;
+        width: 13rem;
         padding: 0.8rem 3.5rem 0.8rem 1.7rem;
         /* margin: 1rem 2rem; */
         margin: 1rem 0;
