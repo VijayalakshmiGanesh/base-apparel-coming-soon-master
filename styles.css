@@ -6,17 +6,26 @@
     --Dark-Grayish-Red: hsl(0, 6%, 24%);
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
     padding: 0;
     margin: 0;
+
+}
+
+.container {
     background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    width: 60%;
 }
 
 .content {
     margin: 1rem 2.7rem 2rem;
-    padding: 2rem 13rem 4rem 4rem;
+    padding: 2rem 5rem 4rem 4rem;
 }
 
 section {
@@ -24,18 +33,18 @@ section {
     padding: 2rem 0;
 }
 
-.hero-banner {
-    margin: 0 0 0 2rem;
+.hero-banner-section {
+    margin: 0;
 }
 
 h1 {
     font-family: 'Josefin Sans';
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: 1rem;
     color: var(--Dark-Grayish-Red);
     font-size: 3rem;
     margin-bottom: 0;
-    margin-right: 4rem;
+    margin-right: 12rem;
 }
 
 h1 span {
@@ -48,22 +57,22 @@ h1 span {
     color: var(--Desaturated-Red);
     font-size: 16px;
     line-height: 1.7rem;
-    margin-right: 5.5rem;
-
+    margin-right: 8rem;
+    padding-right: 8rem;
 }
 
-input {
-    width: 16.3rem;
-    padding: 0.8rem 3.9rem 0.8rem 2rem;
+input[type="text"] {
+    width: 23rem;
+    padding: 0.8rem 3.5rem 0.8rem 1.7rem;
     font-family: 'Josefin Sans';
     font-size: 16px;
     border-radius: 2.5rem;
     border: 1px solid var(--Desaturated-Red);
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     background-color: inherit;
 }
 
-input[type="email"]:focus {
+input[type="text"]:focus {
     outline: none;
     border: 2px solid var(--Soft-Red);
 }
@@ -75,7 +84,7 @@ input::placeholder {
 }
 
 .error-icon {
-    /* display: none; */
+    display: none;
 }
 
 .inner-svg input {
@@ -98,6 +107,28 @@ input::placeholder {
     left: -6rem;
     position: relative;
     margin: 0;
+}
+
+.hero-banner {
+    max-width: 100%;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    /*
+    object-fit: cover; */
+}
+
+.mobile-hero-banner {
+    display: none;
+}
+
+.error-msg {
+    color: var(--Soft-Red);
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    padding-left: 2.2rem;
 }
 
 .click-icon:hover {
