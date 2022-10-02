@@ -18,13 +18,15 @@ body {
 }
 
 .container {
+    flex: 0 0;
     background-image: url(images/bg-pattern-desktop.svg);
     background-size: cover;
-    width: 60%;
+    width: 62%;
+
 }
 
 .content {
-    margin: 1rem 2.7rem 2rem;
+    margin: 1rem 2.7rem 0rem;
     padding: 2rem 5rem 4rem 4rem;
 }
 
@@ -34,7 +36,14 @@ section {
 }
 
 .hero-banner-section {
+    flex: 1 0;
     margin: 0;
+    background-image: url(images/hero-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    position: absolute;
+    /* background-size: cover; */
 }
 
 h1 {
@@ -62,19 +71,25 @@ h1 span {
 }
 
 input[type="text"] {
-    width: 23rem;
+    width: 15rem;
     padding: 0.8rem 3.5rem 0.8rem 1.7rem;
     font-family: 'Josefin Sans';
     font-size: 16px;
     border-radius: 2.5rem;
     border: 1px solid var(--Desaturated-Red);
     margin: 1rem 0 0;
-    background-color: inherit;
+    background-color: transparent;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="text"]:-webkit-autofill:focus,
+input:-webkit-autofill {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     outline: none;
     border: 2px solid var(--Soft-Red);
+    background-color: transparent, inherit !important;
 }
 
 input::placeholder {
@@ -109,16 +124,7 @@ input::placeholder {
     margin: 0;
 }
 
-.hero-banner {
-    max-width: 100%;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    /*
-    object-fit: cover; */
-}
+.hero-banner {}
 
 .mobile-hero-banner {
     display: none;
@@ -129,6 +135,7 @@ input::placeholder {
     font-family: 'Josefin Sans';
     font-size: 14px;
     padding-left: 2.2rem;
+    display: none;
 }
 
 .click-icon:hover {
